@@ -15,6 +15,7 @@ RUN rm -f /etc/apt/sources.list.d/* \
  && DEBIAN_FRONTEND=noninteractive apt-get install -y \
     argonaut-server \
     fusiondirectory=${FUSIONDIRECTORY_VERSION} \
+    fusiondirectory-plugin-audit=${FUSIONDIRECTORY_VERSION} \
     fusiondirectory-plugin-argonaut=${FUSIONDIRECTORY_VERSION} \
     fusiondirectory-plugin-autofs=${FUSIONDIRECTORY_VERSION} \
     fusiondirectory-plugin-certificates=${FUSIONDIRECTORY_VERSION} \
